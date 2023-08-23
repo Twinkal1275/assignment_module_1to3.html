@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+
+
+    <!-- Question-10
+    
+         How can we club two or more rows or columns into a single row or column in an HTML table? With Example.
+        
+        
+         Answer:-
+
+           We use the colspan and rowspan attribute, to merge cells in HTML. The rowspan attribute is for the number of rows a cell should 
+           merge, whereas the colspan attribute is for the number of columns a cell should merge. The attribute should be placed inside the 
+           <td> tag.
+        
+        
+        -->
+
+        <!-- Example : rowspan -->
+
+        <table width="70%" align="center" border="1">
+            <thead>
+                <tr>
+                    <caption>User Informations</caption>
+                </tr>
+                <tr>
+                    <th>#id</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>number</th>
+                    <th>Gender</th>
+                    <th>Salary</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr align="center">
+                    <td>1001</td>
+                    <td>Thesiya Twinkal</td>
+                    <td>twin@gmail.com</td>
+                    <td>(+91)7778925823</td>
+                    <td>Female</td>
+                    <td>89500</td>
+                    <td><a href="#">delete</a></td>
+    
+                </tr>
+
+                <tr align="center">
+                    <td>1001</td>
+                    <td>Moliya Jinkal</td>
+                    <td>jenny@gmail.com</td>
+                    <td>(+91)9106259425</td>
+                    <td>Female</td>
+                    <td>80500</td>
+                    <td><a href="#">delete</a></td>
+    
+                </tr>
+                </tbody>
+        </table>
+
+
+          <!-- Example: colspan -->
+      
+          <table width="70%" align="center" border="1">
+            <tr>
+            <caption><h2>View cart</h2></caption>
+        </tr>
+
+        <tr>
+            <th>id</th>
+            <th>photo</th>
+            <th>pname</th>
+            <th>price</th>
+            <th>qty</th>
+            <th>subtotal</th>
+            <th>Action</th>
+        </tr>
+
+    
+        <tr align="center">
+            <td>101</td>
+            <td><img src="https://rukminim2.flixcart.com/image/312/312/kn6cxow0/mobile/p/p/r/guru-1200-gt-e1200zkyins-samsung-original-imagfwzx5z9ry8eh.jpeg?q=70" width="85px" height="85px"></td>
+            <td>Samsung guru 1200</td>
+            <td>Rs.1200 <del>Rs.1599</del></td>
+            <td>1</td>
+            <td>Rs.1200</td>
+            <td><a href="#">delete</a></td>
+        </tr>
+
+        <tr align="center">
+            <td>101</td>
+            <td><img src="https://rukminim2.flixcart.com/image/312/312/jh6l2fk0/mobile/x/6/g/samsung-guru-1200-gt-e1200zdyins-original-imaf59chuhfyz7rv.jpeg?q=70" width="85px" height="85px"></td>
+            <td>Samsung guru 1200</td>
+            <td>Rs.1100 <del>Rs.1599</del></td>
+            <td>1</td>
+            <td>Rs.1100</td>
+            <td><a href="#">delete</a></td>
+        </tr>
+
+        <tr>
+            <td colspan="7" align="right"><h1 style="background-color: black; color: white; padding: 15px; width: 50%;">Subtotas of Products is : Rs 2300-/</h1></td>
+        </tr>
+        
+        
+        </table>
+</body>
+</html>
